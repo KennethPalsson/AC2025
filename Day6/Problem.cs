@@ -2,7 +2,7 @@ namespace Day6;
 
 public class Problem
 {
-    public IList<long> Numbers { get; } = [];
+    public IList<long> Numbers { get; init; } = [];
     public Operator Op { get; set; }
     
     public long GetResult() => Op == Operator.Multiply 
